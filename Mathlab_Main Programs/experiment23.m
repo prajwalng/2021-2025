@@ -1,0 +1,1 @@
+r = inline('1+2*(sin(2*t)).^2') ;   ezpolar(r)
