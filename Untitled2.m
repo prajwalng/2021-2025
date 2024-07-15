@@ -1,5 +1,0 @@
-exp(3)
-log(exp(3))
-log10(exp(3))
-log10(10^5)
-exp(pi*sqrt(163))
