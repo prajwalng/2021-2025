@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Generate CSV/PDF</title>
+</head>
+<body>
+    <h1>Generate CSV/PDF</h1>
+    <form action="" method="get">
+        <label for="model_name">Model Name:</label>
+        <input type="text" id="model_name" name="model_name"><br><br>
+        <input type="submit" value="Generate CSV">
+        <input type="submit" value="Generate PDF">
+    </form>
+    {% if model_name %}
+        <p><a href="{% url 'generate_csv' model_name %}">Generate CSV</a></p>
+        <p><a href="{% url 'generate_pdf' model_name %}">Generate PDF</a></p>
+    {% endif %}
+</body>
+</html>
