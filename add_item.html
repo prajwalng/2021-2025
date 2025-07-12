@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="add_item.css">
+    <title>Add a New Item</title>
+</head>
+<body>
+    <header>
+        <h1>Add a New Item</h1>
+    </header>
+
+    <section id="add-item-form">
+        <form onsubmit="saveNewItem(event)">
+            <label for="itemName">Item Name:</label>
+            <input type="text" id="itemName" required>
+
+            <label for="itemImage">Item Image URL:</label>
+            <input type="url" id="itemImage" required>
+
+            <!-- Add more fields as needed -->
+
+            <button type="submit">Save Item</button>
+        </form>
+    </section>
+
+    <script src="add_item.js"></script>
+</body>
+</html>
